@@ -135,21 +135,20 @@ document.getElementById('testForm').addEventListener('submit', function (event) 
     document.getElementById('lowestPercentageValue').textContent = lowestPercentages.join(', ');
     
 });
-document.getElementById('generatePdfButton').addEventListener('click', function () {
-    // Use jsPDF to generate a PDF
-    var pdf = new jsPDF();
-
-    // Get the HTML content of the entire page
-    var htmlContent = document.documentElement.innerHTML;
-
-    // Add the HTML content to the PDF
-    pdf.fromHTML(htmlContent, 15, 15);
-    var name = testName.textContent;
-    // Save the PDF
-    pdf.save(name+'.pdf');
-});
 
 document.addEventListener('DOMContentLoaded', function () {
     var today = new Date().toISOString().split('T')[0];
     document.querySelector('.date-setting-input').value = today;
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const generatePdfButton = document.getElementById('generatePdfButton');
+
+    generatePdfButton.addEventListener('click', function () {
+        // Apply any additional styles or modifications if needed
+        // ...
+
+        // Trigger the print dialog
+        window.print();
+    });
 });
