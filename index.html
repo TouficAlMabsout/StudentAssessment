@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assessment</title>
+
+    <!-- Include jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="info-box">
+        <span class="info-label">Test Name:</span>
+        <input type="text" class="info-input" id = "testName" >
+    </div>
+    
+    <div class="info-box">
+        <span class="info-label">Total Students:</span>
+        <input type="number" class="info-input" id="totalStudents" >
+    </div>
+    
+    <div class="date-setting-box">
+        <span class="date-setting-label">Set Date:</span>
+        <input type="date" class="date-setting-input">
+    </div>
+    
+    
+    
+    <form id="testForm">
+        <table id="questionsTable">
+            <thead>
+                <tr>
+                    <th>Objective</th>
+                    <th>Students that acquired the objective</th>
+                    <th>Corresponding percentage</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button type="button" id="addObjective">Add Objective</button>
+        <input type="submit" value="Submit" id="submission">
+
+    </form>
+    <!-- Add these divs to your HTML structure -->
+    <div id="highestPercentageBox" class="percentage-box">
+        <h3>Highest Acquired Objective</h3>
+        <div id="highestPercentageValue"></div>
+    </div>
+
+    <div id="lowestPercentageBox" class="percentage-box">
+        <h3>Least Acquired Objective</h3>
+        <div id="lowestPercentageValue"></div>
+    </div>
+    <div id="generatePdfButton">Generate PDF</div>
+
+    <script>
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
