@@ -145,6 +145,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     display: inline-block;
+    width:265px;
 }
 
 .date-setting-label {
@@ -203,6 +204,39 @@
 
 #generatePdfButton:hover {
     background-color: #45a049;
+}
+
+.subject-setting-box,
+.class-setting-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-right: 10px; /* Added margin-right for spacing between the boxes */
+}
+
+.subject-setting-box .info-label,
+.class-setting-box .info-label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.subject-setting-box .info-input,
+.class-setting-box .info-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
 }
 
 
