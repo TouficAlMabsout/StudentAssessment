@@ -52,7 +52,7 @@ function addRow(table) {
     // Set value to an empty string after appending to the document
 
     var removeCell = row.insertCell(3);
-    removeCell.innerHTML = '<button type="button">Remove</button>';
+    removeCell.innerHTML = '<button type="button">Delete</button>';
     removeCell.querySelector('button').addEventListener('click', function () {
         table.deleteRow(row.rowIndex);
     });
