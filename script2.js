@@ -100,14 +100,14 @@ document.getElementById('testForm').addEventListener('submit', function (event) 
 
         // Validate missing objective
         if (objectiveInput.value.trim() === '') {
-            alert('Please enter an objective for row ' + i + '.');
+            alert('Please enter a skill for row ' + i + '.');
             return;
         }
 
         // Validate Students that Acquired the Objective
         var studentValue = parseInt(studentInput.value);
         if (isNaN(studentValue) || studentValue <= 0 || studentValue>totalStudents) {
-            alert('Please enter a valid positive integer for Students that acquired the objective in row ' + i + '.');
+            alert('Please enter a valid positive integer for Students that acquired the skill in row ' + i + '.');
             studentInput.value = ''; // Clear the input
             return;
         }
@@ -156,6 +156,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function(){
     const goToSkills = document.getElementById('navigateButton');
     goToSkills.addEventListener('click',function(){
-        window.location="index2.html";
+        window.location="index.html";
     });
 });
