@@ -27,9 +27,10 @@ document.getElementById('addObjective').addEventListener('click', function () {
 function addRow(table) {
     var row = table.insertRow(-1);
 
-    var input = document.createElement('input');
+    var input = document.createElement('textarea');
     input.type = 'text';
     input.placeholder = '';
+    input.id="inputObjective";
 
     var cell = row.insertCell(0);
     cell.appendChild(input);
